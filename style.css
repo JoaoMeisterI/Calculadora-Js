@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6vh;
+    animation: neon 15s infinite;
+
+   
+}
+body{
+    background: linear-gradient(to bottom, rgb(112, 21, 231), rgb(149, 66, 187));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#calculadora{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: black;
+    width: 45vh;
+    height: 63vh;
+    border-radius: 50px;
+    border: 20px  aqua;
+    border-style: solid;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    margin-top: 3vh;
+    
+}
+
+input{
+    width: 50%;
+    height: 8vh;
+    position: relative;
+    left: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: 10px double aqua;
+    color: white;
+    font-size: 4vh;
+    text-align: center;    
+    
+}
+
+
+.limpar{
+    position: relative;
+    left: 6vh;
+    bottom: -0.5vh;
+    border-radius: 50%;
+}
+
+#conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.botao{
+    height: 8vh;
+    width: 8vh;
+    margin: 2px;
+    background-color: rgb(190, 84, 252);
+    font-size: 2.5vh;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+   
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+.operacoes{
+    width: 16.5vh
+}
+
+
+.igual{
+    width: 25.5vh;
+    animation: color 10s infinite;
+    
+    
+}
+
+.mais{
+    height: 16.5vh;
+}
+
+
+
+
+@keyframes color{
+    0%{
+        background-color: aquamarine;
+    }
+    10%{
+        background-color: rgb(127, 255, 155);
+    }
+    20%{
+        background-color: rgb(242, 255, 127);
+    }
+    30%{
+        background-color: rgb(255, 127, 127);
+    }
+    40%{
+        background-color: rgb(127, 129, 255);
+    }
+    50%{
+        background-color: rgb(150, 127, 255);
+    }
+    60%{
+        background-color: rgb(234, 127, 255);
+    }
+    70%{
+        background-color: rgb(255, 127, 127);
+    }
+    100%{
+        background-color: rgb(255, 204, 127);
+    }
+    100%{
+        background-color: rgb(127, 255, 155);
+    }
+
+}
+
+@keyframes neon{
+    100%{
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #10d6e1, 0 0 30px #ffffff, 0 0 40px #35e5e8, 0 0 70px;
+        background: linear-gradient(90deg, #ff00ff, #00ff00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
